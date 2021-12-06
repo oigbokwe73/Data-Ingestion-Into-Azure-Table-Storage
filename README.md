@@ -7,9 +7,6 @@
 |ApiKeyName|x-api-key|Will be passed in the header  :  the file name of the config.
 |AppName| frontier| This is the name of the Function App. Used in log analytics|
 |StorageAcctName|<STORAGE ACCOUNT NAME>|Example  "AzureWebJobsStorage"|
-|EventURL|<EVENT_KEY_NAME>| Url should be provided or from Keyvault|
-|EventKeyCredentials|<KEY_CREDENTIALS>| Event Grid Key credentials will be retrieved from the Key Vault|
-
 
 ## Function App  Configuration 
 
