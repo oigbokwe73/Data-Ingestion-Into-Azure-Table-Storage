@@ -3,9 +3,9 @@
 |Key|Value | Comment|
 |:----|:----|:----|
 |AzureWebJobsStorage|<CONNECTION STRING>|RECOMMENDATION :  store in AzureKey Vault.|
-|ConfigurationPath|/ ContainerName/Folder |Folder is optional
-|ApiKeyName|x-api-key|Will be passed in the header  :  the file name of the config.
-|AppName| frontier| This is the name of the Function App. Used in log analytics|
+|ConfigurationPath| <CONFIGURATION FOLDER PATH> |Folder is optional
+|ApiKeyName|<API KEY NAME>|Will be passed in the header  :  the file name of the config.
+|AppName| <APPLICATION NAME>| This is the name of the Function App. Used in log analytics|
 |StorageAcctName|<STORAGE ACCOUNT NAME>|Example  "AzureWebJobsStorage"|
 
 ## Function App  Configuration 
