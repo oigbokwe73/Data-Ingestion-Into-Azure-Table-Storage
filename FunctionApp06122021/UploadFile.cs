@@ -14,7 +14,7 @@ using System.Linq;
 
 namespace FunctionApp06122021
 {
-    public class UpdateFile
+    public class UploadFile
     {
         private HttpRequest _req;
         private NameValueCollection nvc = new NameValueCollection();
