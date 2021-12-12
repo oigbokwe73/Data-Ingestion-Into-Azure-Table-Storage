@@ -16,6 +16,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Update="Config\43EFE991E8614CFB9EDECF1B0FDED37C.json">
+      <SubType>Designer</SubType>
+      <LastGenOutput>43EFE991E8614CFB9EDECF1B0FDED37B.Designer.cs</LastGenOutput>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
     <None Update="Config\43EFE991E8614CFB9EDECF1B0FDED37B.json">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>43EFE991E8614CFB9EDECF1B0FDED37B.Designer.cs</LastGenOutput>

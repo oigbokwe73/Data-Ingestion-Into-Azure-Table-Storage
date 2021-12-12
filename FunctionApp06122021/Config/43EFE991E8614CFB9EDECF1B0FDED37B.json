@@ -35,15 +35,15 @@
           "Value": "application/json"
         },
         {
-          "Key": "storageaccount",
+          "Key": "StorageAccount",
           "Value": "AzureWebJobsStorage"
         },
         {
-          "Key": "folderName",
+          "Key": "FolderName",
           "Value": "config"
         },
         {
-          "Key": "fileName",
+          "Key": "FileName",
           "Value": "FileTransformData.xsl"
         },
         {

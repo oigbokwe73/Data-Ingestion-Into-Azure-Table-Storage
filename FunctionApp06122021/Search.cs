@@ -14,18 +14,19 @@ using System.Linq;
 
 namespace FunctionApp1221
 {
-    public class UploadFile
+    public class Search
     {
         private HttpRequest _req;
         private NameValueCollection nvc = new NameValueCollection();
-        [FunctionName("UploadFile")]
+        [FunctionName("search")]
         public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)]
             HttpRequest req, ILogger log)
         {
             _req = req;
 
             log.LogInformation("C# HTTP trigger function processed a request.");
-            var results = orchrestatorService.Run(_req.Body);
+            string requestBody = await new StreamReader(_req.Body).ReadToEndAsync();
+            var results = orchrestatorService.Run(requestBody);
             return resultSet(results);
 
         }
