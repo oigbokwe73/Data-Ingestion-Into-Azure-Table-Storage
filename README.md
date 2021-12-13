@@ -17,6 +17,17 @@
 |43EFE991E8614CFB9EDECF1B0FDED37B.json| Upload Config File|
 |43EFE991E8614CFB9EDECF1B0FDED37C.json| Search Records config File.|
 
+## Upload CSV File
+
+|Key|Value|Comments|
+|:----|:----|:----|
+|ReadCsvAsStream|Yes| Required to parse the csv file while uploading|
+|messageformat|application/json OR application/xml| required|
+|FolderName||OPTIONAL:This is required for additonal XSL transformation |
+|FileName||OPTIONAL:This is required for additonal XSL transformation |
+|TableName|<AZURE TABLE NAME>| Create table add records
+|StorageAccount|<STORAGE ACCOUNT KEY>| Name of the  storage account key in AppSettings.|
+
 
 
 ## Search Record
