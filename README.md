@@ -40,4 +40,19 @@
 |DefaultResult| <CUSTOM MESSAGE> | OPTIONAL :  No  results return then a default message
 |TableName|<AZURE TABLE NAME>| Create table add records
 |StorageAccount|<STORAGE ACCOUNT KEY>| Name of the  storage account key in AppSettings.|
+  
+  
+  ## Products
 
+|products|links|Comments|
+|:----|:----|:----|
+|Sample Data Sets|https://www.kaggle.com/datasets| Useful site for pulling sample payload|
+|PartitionKey|<PROPERTY NAME >|OPTIONAL : Identity the  Field/Key in the JSON payload as a Partition Key|
+|QueryField|<SEARCH PROPERTY NAME>|Provide the search property name to be used in the search
+|DefaultResult| <CUSTOM MESSAGE> | OPTIONAL :  No  results return then a default message
+|TableName|<AZURE TABLE NAME>| Create table add records
+|StorageAccount|<STORAGE ACCOUNT KEY>| Name of the  storage account key in AppSettings.|
+
+## bug
+  
+if the  csv has "," in the payload will throw  a "column header error". Only use CSV's without  Commas(",") in the  payload
