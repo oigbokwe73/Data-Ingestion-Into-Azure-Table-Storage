@@ -47,10 +47,10 @@
 |products|links|Comments|
 |:----|:----|:----|
 |Sample Data Sets|https://www.kaggle.com/datasets| Useful site for pulling sample payload|
-|PartitionKey|<PROPERTY NAME >|OPTIONAL : Identity the  Field/Key in the JSON payload as a Partition Key|
-|QueryField|<SEARCH PROPERTY NAME>|Provide the search property name to be used in the search
-|DefaultResult| <CUSTOM MESSAGE> | OPTIONAL :  No  results return then a default message
-|TableName|<AZURE TABLE NAME>| Create table add records
+|Azure Storage Explorer|https://azure.microsoft.com/en-us/features/storage-explorer/#features|useful view and query data in azure table storage|
+|Postman|<SEARCH PROPERTY NAME>|Provide the search property name to be used in the search
+|VsCode| https://visualstudio.microsoft.com/downloads/ |  Required extensions. Azure Functions, Azure Account
+|VS Studio Community Edition |https://visualstudio.microsoft.com/downloads/| Recommended. Nice intergration with Azure. software is free.
 |StorageAccount|<STORAGE ACCOUNT KEY>| Name of the  storage account key in AppSettings.|
 
 ## bug
