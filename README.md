@@ -36,7 +36,7 @@ Upload the selected files from the "**Config**" folder in your project
 |messageformat|application/json OR application/xml| required|
 |FolderName||OPTIONAL:This is required for additonal XSL transformation |
 |FileName||OPTIONAL:This is required for additonal XSL transformation |
-|TableName|<AZURE TABLE NAME>| Create table add records
+|TableName|<AZURE TABLE NAME> :: REQUIRED| Create table add records
 |StorageAccount|<STORAGE ACCOUNT KEY>| Name of the  storage account key in AppSettings.|
 
 
