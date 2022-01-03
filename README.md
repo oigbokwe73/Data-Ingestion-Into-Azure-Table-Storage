@@ -17,6 +17,15 @@
 |43EFE991E8614CFB9EDECF1B0FDED37B.json| Upload Config File|
 |43EFE991E8614CFB9EDECF1B0FDED37C.json| Search Records config File.|
 
+## Upload Configuration to Storage
+Go to created storage Account.. Click On "Blob Service" 
+![image](https://user-images.githubusercontent.com/15838780/147958072-4a6058d2-d320-44a0-9d11-58449d527cd3.png)
+
+Click on **"Container"**
+![image](https://user-images.githubusercontent.com/15838780/147958201-71df0f21-e4e8-46c0-93be-728f1dbc2a43.png)
+
+
+
 ## Upload CSV File
 
 |Key|Value|Comments|
