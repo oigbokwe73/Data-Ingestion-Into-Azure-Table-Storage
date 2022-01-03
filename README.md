@@ -23,6 +23,7 @@ Go to created storage Account.. Click On "Blob Service"
 
 Click on **"Container"**
 ![image](https://user-images.githubusercontent.com/15838780/147958201-71df0f21-e4e8-46c0-93be-728f1dbc2a43.png)
+![image](https://user-images.githubusercontent.com/15838780/147963170-1a2f2a64-7ba2-44ce-9f5d-30d490529711.png)
 
 
 
