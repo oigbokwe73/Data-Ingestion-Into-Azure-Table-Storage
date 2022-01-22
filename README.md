@@ -14,7 +14,7 @@
 
 |FileName|Description|
 |:----|:----|
-|43EFE991E8614CFB9EDECF1B0FDED37B.json| Upload Config File|
+|43EFE991E8614CFB9EDECF1B0FDED37B.json| Upload CSV file|
 |43EFE991E8614CFB9EDECF1B0FDED37C.json| Search Records config File.|
 
 ## Upload Configuration to Storage
