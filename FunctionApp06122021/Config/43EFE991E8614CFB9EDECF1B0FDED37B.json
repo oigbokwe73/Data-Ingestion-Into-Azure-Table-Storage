@@ -1,4 +1,4 @@
-﻿{
+{
   "Id": "UploadFileProcess",
   "LineOfBusinessProcessData": [
     {
@@ -10,12 +10,12 @@
   "DataFlowProcess": [
     {
       "Key": "Read-Uploaded-File",
-      "Type": "Xenhey.BPM.Core.Processes.BlobFileWritePCSVProcessrocess",
+      "Type": "Xenhey.BPM.Core.Processes.CSVProcess",
       "Async": "false",
       "IsEnable": "true",
       "DataFlowProcessParameters": [
         {
-          "Key": "ReadCsvAsStream",
+          "Key": "ReadCsvAsStreamv2",
           "Value": "yes"
         },
         {
@@ -92,7 +92,7 @@
         },
         {
           "Key": "TableName",
-          "Value": "training1206201"
+          "Value": "training20220124"
         }
       ]
     }
