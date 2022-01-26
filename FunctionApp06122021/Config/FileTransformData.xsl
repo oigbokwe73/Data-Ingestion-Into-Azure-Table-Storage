@@ -9,10 +9,17 @@
     </xsl:copy>
   </xsl:template>
   <xsl:template match="//*[local-name()='NewDataSet']">
-    <xsl:apply-templates select="@*|node()" />
+    <xsl:choose>
+      <xsl:when test=".=''">
+        <Table json:Array="true">No Records Found</Table>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates select="@*|node()" />
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   <xsl:template match="Table1">
-    <Table>
+    <Table json:Array="true">
       <xsl:apply-templates select="@*|node()"/>
     </Table>
   </xsl:template>
