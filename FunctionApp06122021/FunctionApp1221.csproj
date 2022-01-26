@@ -6,7 +6,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.15.0" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.13" />
-    <PackageReference Include="Xenhey.BPM.Core.DotNet" Version="9.2.8" />
+    <PackageReference Include="Xenhey.BPM.Core.DotNet" Version="10.0.7" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Config\43EFE991E8614CFB9EDECF1B0FDED37B.Designer.cs">
