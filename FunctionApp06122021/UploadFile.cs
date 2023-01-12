@@ -33,9 +33,9 @@ namespace FunctionApp1221
         private ActionResult resultSet(string reponsePayload)
         {
             var returnContent = new ContentResult();
-            var mediaSelectedtype = _req.Headers.Where(x => x.Key.Equals("Content-Type")).FirstOrDefault();
+            var mediaSelectedtype = nvc.Get("Content-Type");
             returnContent.Content = reponsePayload;
-            returnContent.ContentType = mediaSelectedtype.Value;
+            returnContent.ContentType = mediaSelectedtype;
             return returnContent;
         }
         private IOrchrestatorService orchrestatorService

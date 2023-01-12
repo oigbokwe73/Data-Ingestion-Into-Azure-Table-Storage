@@ -1,5 +1,5 @@
 ﻿{
-  "Id": "SearchTableStorage",
+  "Id": "AddRecordToStorageAcct",
   "LineOfBusinessProcessData": [
     {
       "Key": "object",
@@ -9,18 +9,14 @@
   "Type": "",
   "DataFlowProcess": [
     {
-      "Key": "Azure_Table_Storage",
-      "Type": "Xenhey.BPM.Core.Processes.AzureTableStorageProcess",
+      "Key": "AddRecordToTable",
+      "Type": "Xenhey.BPM.Core.Processes.CreateRecordForAzureTable",
       "Async": "false",
       "IsEnable": "true",
       "DataFlowProcessParameters": [
         {
-          "Key": "SimpleTableSearch",
+          "Key": "CreateRecordForAzureTable",
           "Value": "yes"
-        },
-        {
-          "Key": "QueryField",
-          "Value": "search"
         },
         {
           "Key": "StorageAccount",
@@ -29,10 +25,6 @@
         {
           "Key": "TableName",
           "Value": "training20221130"
-        },
-        {
-          "Key": "DefaultResult",
-          "Value": "No Records Found"
         }
       ]
     }

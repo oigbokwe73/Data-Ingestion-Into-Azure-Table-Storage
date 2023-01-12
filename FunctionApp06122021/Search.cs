@@ -26,6 +26,7 @@ namespace FunctionApp1221
 
             log.LogInformation("C# HTTP trigger function processed a request.");
             string requestBody = await new StreamReader(_req.Body).ReadToEndAsync();
+            _req.Headers.ToList().ForEach(item => { nvc.Add(item.Key, item.Value.FirstOrDefault()); });
             var results = orchrestatorService.Run(requestBody);
             return resultSet(results);
 
@@ -34,20 +35,15 @@ namespace FunctionApp1221
         private ActionResult resultSet(string reponsePayload)
         {
             var returnContent = new ContentResult();
-            var mediaSelectedtype = _req.Headers.Where(x => x.Key.Equals("Content-Type")).FirstOrDefault();
+            var mediaSelectedtype = nvc.Get("Content-Type");
             returnContent.Content = reponsePayload;
-            returnContent.ContentType = mediaSelectedtype.Value;
+            returnContent.ContentType = mediaSelectedtype;
             return returnContent;
         }
         private IOrchrestatorService orchrestatorService
         {
             get
             {
-
-                _req.Headers.ToList().ForEach(item =>
-                {
-                    nvc.Add(item.Key, item.Value.FirstOrDefault());
-                });
                 return new ManagedOrchestratorService(nvc);
             }
         }
