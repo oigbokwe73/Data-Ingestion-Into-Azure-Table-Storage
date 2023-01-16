@@ -1,3 +1,8 @@
+## Architeture diagram 
+
+![image](https://user-images.githubusercontent.com/15838780/212723226-6f61e674-ef74-4f62-b8ab-982cd22b590c.png)
+
+
 ## Appplication Setting 
 
 |Key|Value | Comment|
