@@ -20,7 +20,8 @@
 |FileName|Description|
 |:----|:----|
 |43EFE991E8614CFB9EDECF1B0FDED37B.json| Upload CSV file|
-|43EFE991E8614CFB9EDECF1B0FDED37C.json| Search Records config File.|
+|43EFE991E8614CFB9EDECF1B0FDED37C.json| Search Records in datastore|
+|43EFE991E8614CFB9EDECF1B0FDED37D.json| Create a new record in datastore|
 
 ## Upload Configuration to Storage
 Go to created storage Account.. Click On "Blob Service" 
