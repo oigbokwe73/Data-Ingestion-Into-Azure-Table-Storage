@@ -19,7 +19,9 @@
 
 |FileName|Description|
 |:----|:----|
-|43EFE991E8614CFB9EDECF1B0FDED37B.json| Upload CSV file|
+
+|43EFE991E8614CFB9EDECF1B0FDED37A.json| Upload CSV files --> Add to datastore|
+|43EFE991E8614CFB9EDECF1B0FDED37B.json| Update an existing record|
 |43EFE991E8614CFB9EDECF1B0FDED37C.json| Search Records in datastore|
 |43EFE991E8614CFB9EDECF1B0FDED37D.json| Create a new record in datastore|
 |3FB620B0E0FD4E8F93C9E4D839D00E1C.json| Uplad a CSV and create a batch|
