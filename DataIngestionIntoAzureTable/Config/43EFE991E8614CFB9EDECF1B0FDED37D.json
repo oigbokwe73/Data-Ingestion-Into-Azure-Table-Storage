@@ -10,7 +10,7 @@
   "DataFlowProcess": [
     {
       "Key": "AddRecordToTable",
-      "Type": "Xenhey.BPM.Core.Net6.Processes.CreateRecordForAzureTable",
+      "Type": "Xenhey.BPM.Core.Net6.Processes.AzureTableStorageProcess",
       "Async": "false",
       "IsEnable": "true",
       "DataFlowProcessParameters": [

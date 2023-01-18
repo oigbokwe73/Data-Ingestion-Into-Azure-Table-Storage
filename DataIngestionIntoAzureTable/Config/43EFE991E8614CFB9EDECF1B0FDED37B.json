@@ -1,5 +1,5 @@
 {
-  "Id": "UpdateRecord",
+  "Id": "DeleteRecordFromStorage",
   "LineOfBusinessProcessData": [
     {
       "Key": "object",
@@ -9,13 +9,13 @@
   "Type": "",
   "DataFlowProcess": [
     {
-      "Key": "UpdateRecordInDataStore",
+      "Key": "DeleteRecordFromStorage",
       "Type": "Xenhey.BPM.Core.Net6.Processes.AzureTableStorageProcess",
       "Async": "false",
       "IsEnable": "true",
       "DataFlowProcessParameters": [
         {
-          "Key": "UpdateRecordInTableStore",
+          "Key": "DeleteRecordsFromTableStore",
           "Value": "yes"
         },
         {
@@ -28,15 +28,19 @@
         },
         {
           "Key": "statement",
-          "Value": "RowKey eq '@{RowKey}'"
+          "Value": "PartitionKey eq '@{PartitionKey}'"
         },
         {
           "Key": "filters",
-          "Value": "[{\"Key\": \"@{RowKey}\",\"Value\": \"streamid\"}]"
+          "Value": "[{\"Key\": \"@{PartitionKey}\",\"Value\": \"PartitionKey\"}]"
         },
         {
           "Key": "PrimaryKey",
           "Value": "PartitionKey"
+        },
+        {
+          "Key": "batchsize",
+          "Value": "100"
         }
       ]
     }
