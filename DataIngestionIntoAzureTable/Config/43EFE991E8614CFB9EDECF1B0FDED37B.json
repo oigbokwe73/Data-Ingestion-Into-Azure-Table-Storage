@@ -1,5 +1,5 @@
 {
-  "Id": "UploadFileProcess",
+  "Id": "UpdateRecord",
   "LineOfBusinessProcessData": [
     {
       "Key": "object",
@@ -9,58 +9,34 @@
   "Type": "",
   "DataFlowProcess": [
     {
-      "Key": "Read-Uploaded-File",
-      "Type": "Xenhey.BPM.Core.Net6.Processes.CSVProcess",
+      "Key": "UpdateRecordInDataStore",
+      "Type": "Xenhey.BPM.Core.Net6.Processes.AzureTableStorageProcess",
       "Async": "false",
-      "IsEnable": "false",
+      "IsEnable": "true",
       "DataFlowProcessParameters": [
         {
-          "Key": "ReadCsvAsStreamv2",
+          "Key": "UpdateRecordInTableStore",
           "Value": "yes"
-        },
-        {
-          "Key": "messageformat",
-          "Value": "application/json"
-        }
-      ]
-    },
-    {
-      "Key": "MessageBuilderProcess",
-      "Type": "Xenhey.BPM.Core.Net6.Processes.MessageBuilderProcess",
-      "Async": "false",
-      "IsEnable": "false",
-      "DataFlowProcessParameters": [
-        {
-          "Key": "BuildArrayFromComplexObject",
-          "Value": "Yes"
         },
         {
           "Key": "TableName",
-          "Value": "Table"
-        }
-      ]
-    },
-    {
-      "Key": "Write-To-Storage",
-      "Type": "Xenhey.BPM.Core.Net6.Processes.AzureTableStorageProcess",
-      "Async": "false",
-      "IsEnable": "false",
-      "DataFlowProcessParameters": [
-        {
-          "Key": "CreateRecordForAzureTableBatch",
-          "Value": "yes"
-        },
-        {
-          "Key": "BatchSize",
-          "Value": "100"
+          "Value": "training20221130"
         },
         {
           "Key": "StorageAccount",
           "Value": "AzureWebJobsStorage"
         },
         {
-          "Key": "TableName",
-          "Value": "training20221130"
+          "Key": "statement",
+          "Value": "RowKey eq '@{RowKey}'"
+        },
+        {
+          "Key": "filters",
+          "Value": "[{\"Key\": \"@{RowKey}\",\"Value\": \"streamid\"}]"
+        },
+        {
+          "Key": "PrimaryKey",
+          "Value": "PartitionKey"
         }
       ]
     }
