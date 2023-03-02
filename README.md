@@ -2,6 +2,9 @@
 
 ![image](https://user-images.githubusercontent.com/15838780/212723226-6f61e674-ef74-4f62-b8ab-982cd22b590c.png)
 
+## How to install  ACI for SFTP ##
+
+https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sftp-on-azure
 
 ## Appplication Setting 
 
@@ -12,6 +15,7 @@
 |ApiKeyName|[API KEY NAME]|Will be passed in the header  :  the file name of the config.
 |AppName| [APPLICATION NAME]| This is the name of the Function App. Used in log analytics|
 |StorageAcctName|[STORAGE ACCOUNT NAME]|Example  "AzureWebJobsStorage"|
+|TimerInterval|[TIMER_INTERVAL]|Example  "0 */1 * * * *" 1 MIN|
 
 ## Function App  Configuration 
 
