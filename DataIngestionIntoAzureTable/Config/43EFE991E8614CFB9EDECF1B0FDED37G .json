@@ -1,0 +1,32 @@
+﻿{
+  "Id": "AddRecordToStorageAcct",
+  "LineOfBusinessProcessData": [
+    {
+      "Key": "object",
+      "Type": "Xenhey.BPM.Core.Net6.Processes.ProcessData"
+    }
+  ],
+  "Type": "",
+  "DataFlowProcess": [
+    {
+      "Key": "AddRecordToTable",
+      "Type": "Xenhey.BPM.Core.Net6.Processes.AzureTableStorageProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "UpdateRecordInTableStore",
+          "Value": "yes"
+        },
+        {
+          "Key": "StorageAccount",
+          "Value": "AzureWebJobsStorage"
+        },
+        {
+          "Key": "TableName",
+          "Value": "training03012023"
+        }
+      ]
+    }
+  ]
+}
