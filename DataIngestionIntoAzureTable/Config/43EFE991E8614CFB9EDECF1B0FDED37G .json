@@ -7,26 +7,30 @@
     }
   ],
   "Type": "",
-  "DataFlowProcess": [
+  "DataFlowProcessParameters": [
     {
-      "Key": "AddRecordToTable",
-      "Type": "Xenhey.BPM.Core.Net6.Processes.AzureTableStorageProcess",
-      "Async": "false",
-      "IsEnable": "true",
-      "DataFlowProcessParameters": [
-        {
-          "Key": "UpdateRecordInTableStore",
-          "Value": "yes"
-        },
-        {
-          "Key": "StorageAccount",
-          "Value": "AzureWebJobsStorage"
-        },
-        {
-          "Key": "TableName",
-          "Value": "training03012023"
-        }
-      ]
+      "Key": "UpdateRecordInTableStore",
+      "Value": "yes"
+    },
+    {
+      "Key": "TableName",
+      "Value": "training03012023"
+    },
+    {
+      "Key": "StorageAccount",
+      "Value": "AzureWebJobsStorage"
+    },
+    {
+      "Key": "statement",
+      "Value": "RowKey eq '@{RowKey}'"
+    },
+    {
+      "Key": "filters",
+      "Value": "[{\"Key\": \"@{RowKey}\",\"Value\": \"RowKey\"}]"
+    },
+    {
+      "Key": "RowKey",
+      "Value": "RowKey"
     }
   ]
 }
